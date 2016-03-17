@@ -1,0 +1,43 @@
+{
+  "name": "guid",
+  "displayName": "guid",
+  "description": "A command that creates a new guid.",
+  "version": "0.0.1",
+  "publisher": "TerraVenil",
+  "engines": {
+    "vscode": "^0.10.10"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.guid"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.guid",
+        "title": "Generate GUID"
+      }
+    ],
+    "keybindings": [
+      {
+        "key": "ctrl+shift+[",
+        "command": "extension.guid"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "typescript": "^1.8.5",
+    "vscode": "^0.11.0"
+  },
+  "dependencies": {
+    "node-uuid": "^1.4.7"
+  }
+}
