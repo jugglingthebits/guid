@@ -3,7 +3,7 @@
   "displayName": "guid",
   "description": "A command that creates a new guid.",
   "version": "0.0.1",
-  "publisher": "TerraVenil",
+  "publisher": "kosunix",
   "engines": {
     "vscode": "^0.10.10"
   },
