@@ -11,7 +11,7 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.window.activeTextEditor.edit(builder => {
             textEditor.selections.forEach(sel => {
                 let result = uuid.v4();
-                builder.replace(sel, result.toUpperCase());
+                builder.replace(sel, result);
             })
         });
 	});
